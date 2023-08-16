@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Variables
+WorkDir=/etc/OVPN-server-generator
+
+#main
+$Workdir/OVPN_server.sh
