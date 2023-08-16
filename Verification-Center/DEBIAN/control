@@ -1,0 +1,7 @@
+Package: Verification-Center
+Version: 1.0
+Maintainer: sample-mails@mail.me
+Architecture: All
+Section: misc
+Description: Secripts for creation of verification center
+Depends: openvpn, easy-rsa, ftp, vsftpd

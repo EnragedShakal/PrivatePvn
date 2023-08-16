@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Enter an ip-adress of file server"
+read -p "> " ftp_ip
+ip=$(curl -s 2ip.ru)
+
+#Insert ip's in files
+sed -i 's/"[ip]"/'$ip'/g' /usr/share/doc/Verification-Center/base.conf
+sed -i 's/"[ip]"/'$ftp_ip'/g' /etc/Verification-Center/send.sh
+
+#Crontab search script
+(crontab -l 2>/dev/null; echo "* * * * * /etc/Verification-Center/search.sh") | crontab -

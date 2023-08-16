@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#remove crontab
+crontab -l 2>/dev/null | grep -v '/etc/Verificarion-Center/search.sh'  | crontab -

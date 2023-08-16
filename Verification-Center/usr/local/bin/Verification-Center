@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ $1 == "create" ]]; then
+	/etc/Verification-Center/Verification-Center.sh
+elif [[ $1 == "sign" ]]; then
+	/etc/Verification-Center/OVPN_sign_request.sh
+else
+	echo -e "Usage: Verification-Center [create/sign]\ncreate - create new verification center\nsign - sign client request"
+	exit 1
+fi
