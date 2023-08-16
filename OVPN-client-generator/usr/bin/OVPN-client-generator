@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [[ $1 == "generate" ]]; then
+	/etc/OVPN-client-generator/OVPN_client.sh
+elif [[ $1 == "make" ]]; then
+	/etc/OVPN-client-generator/OVPN_make.sh
+else 
+	echo "Usage: OVPN-client-generator [generate/make]"
+	exit 1
+fi

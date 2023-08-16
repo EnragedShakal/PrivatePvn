@@ -1,0 +1,15 @@
+#!/bin/bash
+
+RsaExe=$(whereis easy-rsa | sed 's/easy-rsa: //i')/easyrsa
+
+echo "Input ip-adress of file server"
+read -p "> " ip_file
+
+echo "Input ip-adress of vpn server"
+read -p "> "ip_vpn
+
+cd /etc/OVPN-client-generator
+$RsaExe init-pki
+sed -i 's/\[ip\]/'$ip_file'/g' /etc/OVPN-client-generator/send.sh
+sed -i 's/\[ip\]/'$ip_file'/g' /etc/OVPN-client-generator/recieve.sh
+sed -i 's/\[ip\]/'$ip_vpn'/g' /usr/share/doc/OVPN-client-generator/base.conf
