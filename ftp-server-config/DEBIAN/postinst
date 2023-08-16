@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter ip-adress of verification center"
+read -p "> " vc_ip
+
+#Resrart vsftpd
+echo "/usr/sbin/nologin" >> /etc/shells
+service vsftpd start
+
+#insert ip of vc server
+sed -i 's/\[ip\]/'$vc_ip'/g' /etc/ftp-server-config/send.sh
+
+#crontab job for search
+(crontab -l 2>/dev/null; echo "* /1 * * * /etc/ftp-server-config/client_check.sh") | crontab -
