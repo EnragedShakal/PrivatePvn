@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" modified="2023-08-25T10:51:11.083Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0" etag="DTyEhIpvMgXvn746Na6Y" version="21.6.9" type="device">
+  <diagram name="Страница — 1" id="kCZ6SaBfe3ppOjWTzMiQ">
+    <mxGraphModel dx="1466" dy="846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FGoixHXcgZslfikZn1Ra-1" value="Easy-Rsa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-2" value="Verification Center" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-3" value="OpenVPN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-5" value="Prometheus" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-7" target="FGoixHXcgZslfikZn1Ra-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-7" value="Node Exporter" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-8" target="FGoixHXcgZslfikZn1Ra-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-8" target="FGoixHXcgZslfikZn1Ra-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-8" value="OpenVPN Exporter" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-9" target="FGoixHXcgZslfikZn1Ra-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-9" value="Process Exporter" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-10" target="FGoixHXcgZslfikZn1Ra-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-10" target="FGoixHXcgZslfikZn1Ra-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-10" value="Alert Manager" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-11" value="Клиент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="205" y="700" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-15" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-16">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="110" y="590" as="sourcePoint" />
+            <mxPoint x="200" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="70" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-17" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-1" target="FGoixHXcgZslfikZn1Ra-16">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="100" y="480" as="sourcePoint" />
+            <mxPoint x="220" y="660" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-16" value="Предоставляет парные ключи для шифрования" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-18" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-19">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="180" y="420" as="sourcePoint" />
+            <mxPoint x="220" y="690" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-20" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-2" target="FGoixHXcgZslfikZn1Ra-19">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="220" y="320" as="sourcePoint" />
+            <mxPoint x="220" y="620" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-19" target="FGoixHXcgZslfikZn1Ra-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-19" value="Подписывает сертификаты" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-23" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-21" target="FGoixHXcgZslfikZn1Ra-3">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="240" y="660" as="sourcePoint" />
+            <mxPoint x="420" y="590" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-24" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" target="FGoixHXcgZslfikZn1Ra-21">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="240" y="710" as="sourcePoint" />
+            <mxPoint x="380" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="710" />
+              <mxPoint x="270" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-21" value="Подключается" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-27" target="FGoixHXcgZslfikZn1Ra-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-27" value="Считывает метрики" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-30" target="FGoixHXcgZslfikZn1Ra-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-30" value="Предоставляет метрики" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-35" value="Почта" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-36" target="FGoixHXcgZslfikZn1Ra-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-36" value="Считывает и фильтрует метрики" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-43" value="Отправляет уведомления" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-82" target="FGoixHXcgZslfikZn1Ra-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-82" value="Vsftpd" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="550" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-83" value="Бэкап сервер" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-84" target="FGoixHXcgZslfikZn1Ra-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-84" value="Отправляет и принимает файлы" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-87" target="FGoixHXcgZslfikZn1Ra-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="FGoixHXcgZslfikZn1Ra-87">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="739.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FGoixHXcgZslfikZn1Ra-87" value="Принимает и отправляет файлы&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
