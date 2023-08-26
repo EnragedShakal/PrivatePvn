@@ -20,8 +20,21 @@ fi
 }
 
 #Request a name of .crt file
-Name(){
-echo "Enter a name of "
+CrtName(){
+echo "Enter a name of certificate file"
+read -p "> " crt_name
+if [[ $crt_name == "exit" || $crt_name == "Exit" ]]; then
+        echo "Exiting..."
+        exit
+elif [ -z "$crt_name" ]; then
+        echo "File name can't be blank. Try again"
+        CrtName
+elif [ -f $WorkDir/pki/issued/$crt_name ]; then
+	return
+else
+	echo "Certificate with this name doesn't exist. Try again"
+	CrtName
+fi
 }
 
 #Request path for generated file
@@ -45,9 +58,9 @@ cat ./base.conf \
 	<(echo -e '<ca>') \
 	$WorkDir/pki/ca.crt \
 	<(echo -e '</ca>\n<cert>') \
-	$WorkDir/pki/issued/$name.crt \
+	$WorkDir/pki/issued/$crt_name.crt \
 	<(echo -e '</cert>\n<key>') \
-	$WorkDir/pki/private/$name.key \
+	$WorkDir/pki/private/$crt_name.key \
 	<(echo -e '</key>\n<tls-crypt>') \
 	$WorkDir/ta.key \
 	<(echo -e '</tls-crypt>') \

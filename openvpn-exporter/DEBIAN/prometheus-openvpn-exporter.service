@@ -1,0 +1,14 @@
+[Unit]
+Description=Prometheus OpenVPN Exporter
+After=network.target
+
+[Service]
+User=prometheus
+Group=prometheus
+ExecStart=/usr/bin/prometheus-openvpn-exporter
+Restart=always
+TimeoutSec=5
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

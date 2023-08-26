@@ -6,8 +6,8 @@
 host="[ip]"
 user="ftp"
 path=$1
-user_ip=$(echo $path | sed 's/\/home\/File\/client\///g')
-req_name=$(find ${path}/ -mindepth 1 -maxdepth 1 -type f -name "*.req" | sed 's/\/home\/File\/client\/'$user_ip'\///g')
+user_ip=$(echo $path | sed 's/\/var\/ftp\/client\///g')
+req_name=$(find ${path}/ -mindepth 1 -maxdepth 1 -type f -name "*.req" | sed 's/\/var\/ftp\/client\/'$user_ip'\///g')
 log_file=$(date +"%d-%m-%Y %H:%M:%S.log")
 
 #Send file via ftp

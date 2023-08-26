@@ -4,7 +4,9 @@ if [[ $1 == "generate" ]]; then
 	/etc/OVPN-client-generator/OVPN_client.sh
 elif [[ $1 == "make" ]]; then
 	/etc/OVPN-client-generator/OVPN_make.sh
+elif [[ $1 == "recieve" ]]; then
+	/etc/OVPN-client-generator/recieve.sh
 else 
-	echo "Usage: OVPN-client-generator [generate/make]"
+	echo "Usage: OVPN-client-generator [generate/recieve/make/]"
 	exit 1
 fi

@@ -1,0 +1,8 @@
+Package: peometheus-openvpn-exporter
+Version: 1.0
+Provides: prometheus-openvpn-eporter
+Maintainer: sample-mails@mail.me
+Architecture: all
+Section: misc
+Description: Openvpn exporter for Prometheus
+Depends: prometheus

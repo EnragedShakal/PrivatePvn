@@ -73,4 +73,5 @@ $RsaExe init-pki
 Vars
 $RsaExe build-ca
 openvpn --genkey --secret ta.key
+sed -i 's/VC=/VC='$name'/' /etc/Verification-Center/send.sh
 echo "All done! ☻"

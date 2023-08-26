@@ -1,0 +1,7 @@
+Package: OVPN-auto-backups
+Version: 1.0
+Maintainer: sample-mails@mail.me
+Architecture: all
+Section: misc
+Description: Scripts for OVPN server backups
+Depends: ftp, openvpn, Verification-Center

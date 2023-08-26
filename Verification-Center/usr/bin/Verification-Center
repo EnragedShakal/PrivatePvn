@@ -1,0 +1,14 @@
+#!/bin/bash
+
+WorkDir=/etc/Verification-Center
+
+if [[ $1 == "create" ]]; then
+	$WorkDir/Verification-Center.sh
+elif [[ $1 == "change" ]]; then
+	$WorkDir/change.sh
+elif [[ $1 == "sign" ]]; then
+	$WorkDir/search.sh
+else
+        echo "Usage: Verification-Center [create/change/sign]"
+	exit 1
+fi

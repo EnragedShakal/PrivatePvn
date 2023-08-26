@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Enter an ip-adress of file server"
+read -p "> " ftp_ip
+
+#Insert ip's in files
+sed -i 's/"[ip]"/'$ftp_ip'/g' /etc/OVPN-auto-backups/backup_vc.sh
+
+#Crontab search script
+(crontab -l 2>/dev/null; echo "* /30 * * * /etc/OVPN-auto-backups/search_centers.sh") | crontab -

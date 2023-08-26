@@ -74,7 +74,7 @@ cp $vcpath/$vcname/pki/issued/$sname.crt $ovpnpath/$sname/
 cp $vcpath/$vcname/pki/private/$sname.key $ovpnpath/$sname/ 
 cp $vcpath/$vcname/pki/ca.crt $ovpnpath/$sname/
 cp $vcpath/$vcname/ta.key     $ovpnpath/$sname/
-cp /usr/share/doc/OVPN-server-generator/server.conf $ovpnpath/$sname/ 
+cp /usr/share/doc/OVPN-server-generator/server.conf $ovpnpath/$sname/$sname.conf 
 return
 }
 

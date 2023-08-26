@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if [[ $1 == "manual" ]]; then
+	/etc/OVPN-auto-backups/manual_vc_backup.sh
+else
+	echo "Auto backups are active ☻ If you want a manual backup of Verification Center, use \"OVPN-auto-backups manual\""

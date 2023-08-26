@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+crontab -l 2>/dev/null | grep -v '/etc/OVPN-auto-backups/search_center.sh' | crontab -

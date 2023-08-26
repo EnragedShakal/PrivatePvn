@@ -7,8 +7,9 @@ host="[ip]"
 user="ftp"
 path=$1
 VC="[server_name]"
-user_ip=$(echo $path | sed 's/\/home\/File\/reqs\///g')
-crt_name=$(find $path/* | sed 's/\/home\/File\/reqs\/'$user_ip'\///g' | sed 's/req/crt/g')
+user_ip=$(echo $path | sed 's/\/var\/ftp\/reqs\///g')
+req_name=$(find $path/* | sed 's/\/var\/ftp\/reqs\/'$user_ip'\///g')
+crt_name=$($req_name | sed 's/req/crt/g')
 log_file=$(date +"%d-%m-%Y %T.log")
 
 #Send file via ftp
@@ -25,7 +26,7 @@ END_SCRIPT
 #Main script
 Main() {
 #Sign request
-/etc/Verification-Center/OVPN_sign_request.sh
+/etc/Verification-Center/OVPN_sign_request.sh $req_name $VC
 #Send ca.crt
 file=$VC/pki/ca.crt
 file_name=ca.crt

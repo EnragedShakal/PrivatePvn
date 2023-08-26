@@ -1,0 +1,7 @@
+Package: prometheus-config-for-vpn
+Version: 1.0
+Maintainer: sample-mails@mail.me
+Architecture: all
+Section: misc
+Description: Just a bunch of a .yml files for prometheus with basic rules.
+Depends: prometheus, prometheus-openvpn-exporter, prometheus-node-exporter, prometheus-process-exporter

@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#Variables
+file=~/alertmanager.yml
+
+#Request a header
+header(){
+echo "Enter header for smtp message."
+read -p "> " input
+
+if [ -z "$input" ]; then
+	echo "Header can't be blank. Try again."
+	header
+else
+	echo -e "\nHeader for smtp message will be following:\n$input\nAre you sure? [Yes/No]"
+	read -p "> " answer
+	 case "$answer" in
+		"Yes" | "yes" ) sed -i 's/input1/'$input'/g' $file;;
+		"No" | "no"   ) header;;
+		*             ) echo "I assume, thats a \"No\""; header;;
+	esac
+
+fi
+}
+
+#Request a login
+name(){
+	echo "Enter username for smtp login."
+	read -p "> " input
+
+	if [ -z "$input" ]; then
+		echo "Login can't be blank. Try again."
+		name
+	else
+		echo -e "\nUsername for smtp login will be following:\n$input\nAre you sure? [Yes/No]"
+		read -p "> " answer
+		case "$answer" in
+			"Yes" | "yes" ) sed -i 's/input2/'$input'/g' $file;;
+			"No" | "no"   ) name;;
+			*             ) echo "I assume, thats a \"No\""; name;;
+		esac
+	fi
+}
+
+#Request a password
+password(){
+	echo "Enter password for smtp login."
+	read -p "> " input
+	if [ -z "$input" ]; then
+		echo "Password can't be blank. Try again."
+		password
+	else
+		echo -e "\nPassword for smtp login will be following:\n$input\nAre you sure? [Yes/No]"
+		read -p "> " answer
+		case "$answer" in
+			"Yes" | "yes" ) sed -i 's/input3/'$input'/g' $file;;
+			"No" | "no"   ) password;;
+			*             ) echo "I assume, thats a \"No\""; password;;
+		esac
+	fi
+}
+
+#Main
+echo "Smtp config for alertmager"
+header
+name
+password
+echo "All done! ☻"

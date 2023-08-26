@@ -1,0 +1,3 @@
+/etc/prometheus/alertmanager.yml
+/etc/prometheus/rules.yml
+/etc/prometheus/prometheus.yml
